@@ -30,6 +30,7 @@ function fizzbuzz(n){
   }
 }
 
+//iterate with counter
 for (let i = 1; i <= input; i++) {
   console.log(`${i}: ${fizzbuzz(i)}`)
 }

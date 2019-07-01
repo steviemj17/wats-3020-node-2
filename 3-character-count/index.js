@@ -12,6 +12,7 @@ io.terminal.prompt()
 io.terminal.on("line", function (response) {
   let input = response
   let characters = input.split('')
+  //iterable let/of
   for (let character of characters){
     if (charcount[character]){
       charcount[character] ++
@@ -23,6 +24,7 @@ io.terminal.on("line", function (response) {
 })
 .on("close",function(){
   let charArr = []
+  //value in array
   for (let character in charcount ){
     io.print (`${character} ${charcount[character]}`)
     charArr.push({char:character,count:charcount[character]})

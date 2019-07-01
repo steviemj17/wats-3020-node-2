@@ -54,6 +54,7 @@ io.terminal.on('line', function (response) {
   })
   .on('close', function () {
     io.print("Questions complete")
+    //not iterable value in array
     for (let d in userData) {
       io.print(`${d}: ${userData[d]}`)
     }

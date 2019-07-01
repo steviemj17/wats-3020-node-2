@@ -41,7 +41,7 @@ io.terminal.on('line', function (response) {
   // if done guessing exit
   if (guessCount > 2) {
     console.log('You lose - game over');
-    process.exit(0);
+    process.exit(0); //io.close??
   }
   //if not guesses run the prompt again
   io.terminal.prompt()
