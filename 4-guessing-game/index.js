@@ -1,5 +1,4 @@
 let n = Math.floor(Math.random() * 10) + 1 //get this randomly
-n = 3
 let guessCount = 0
 const io = require("../modules/io/index")
 
@@ -41,7 +40,7 @@ io.terminal.on('line', function (response) {
   // if done guessing exit
   if (guessCount > 2) {
     console.log('You lose - game over');
-    process.exit(0); //io.close??
+    io.terminal.close(); //io.close??
   }
   //if not guesses run the prompt again
   io.terminal.prompt()
@@ -50,6 +49,6 @@ io.terminal.on('line', function (response) {
 //if you control c you get the 
 //detect the termnial is closing and do something
 io.terminal.on('close', function () {
-  console.log(`not happenin'`)
-  process.exit(1);
+  console.log(`DONE`)
+  process.exit();
 });

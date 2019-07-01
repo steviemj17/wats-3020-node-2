@@ -59,7 +59,3 @@ io.terminal.on('line', function (response) {
       io.print(`${d}: ${userData[d]}`)
     }
   });
-
-
-// exit with no error
-// process.exit()
