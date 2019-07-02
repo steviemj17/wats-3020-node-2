@@ -24,7 +24,7 @@ The **terminal** function listens for the `readline` events which include `line`
 
 The `terminal.setPrompt("{ask for data}")` command can be used to provide string output when asking the user for something.  Then when `terminal.prompt()` is called the string provided is shown to the user and the computer waits for a response.  When the user presses the enter key, the callback for the `line` event is executed. 
 
-The pattern you'll see in the code for exercises 2-4 is as follows:
+The pattern you'll see in the code for exercises 3-4 is as follows:
 ```JavaScript
 // ask first question
 io.terminal.setPrompt(`Ask a question? `);
@@ -145,6 +145,7 @@ function(<params>) <function name>{}
 
 (<params> =>{}
 
+## Indexing, Looping and Algorithms
 
 ## Project Resources
 
@@ -158,6 +159,8 @@ this project:
 * Events
 * Iteration
 * Algorithms
+* Looping
+* Indexing
 
 
 ## Basic Requirements
