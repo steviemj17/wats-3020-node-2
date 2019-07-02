@@ -1,3 +1,9 @@
+/*
+Description:
+Input:
+Output:
+Usage: 
+*/
 let n = Math.floor(Math.random() * 10) + 1 //get this randomly
 let guessCount = 0
 const io = require("../modules/io/index")

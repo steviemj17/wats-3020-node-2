@@ -1,3 +1,9 @@
+/*
+Description:
+Input:
+Output:
+Usage: 
+*/
 /**
  * Rewrite fizzbuz to use a function that returns fizz or buzz or fizzbuzz
  * Users enters a number

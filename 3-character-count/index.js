@@ -1,9 +1,10 @@
 
-/**
- * User enters some text
- * Program processes the text such that it can show a list of character
- * and how many times they were used int the input response string
- */
+/*
+Description:
+Input:
+Output:
+Usage: 
+*/
 const io = require("../modules/io/index")
 let charcount = {}
 

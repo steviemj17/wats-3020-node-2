@@ -1,3 +1,9 @@
+/*
+Description:
+Input:
+Output:
+Usage: 
+*/
 /**
  * Users enters a number
  * User tests all numbers between 1 and the number
@@ -28,12 +34,3 @@ for (let i = 1; i <= input; i++) {
     console.log(`${i}`)
   }
 }
-
-
-
-
-
-
-
-
-//exit
