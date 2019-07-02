@@ -13,17 +13,25 @@ if (!input || input.length === 0) {
   process.exit(1)
 }
 
-let result1 = ''
-//work from the back forward to build a string
-for (let i = input.length-1; i >= 0; i--){
-  result1 += input[i]
+function reverseWithFullIteration(str) {
+  let result = ''
+  //work from the back forward to build a string
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i]
+  }
+  return result
 }
-console.log("result1",result1)
 
-let result2 = new Array(input.length)
-//work from both sides and swap
-for (let i = 0; i < input.length/2; i++){
-  result2[i] = input[(input.length - i)]
-  result2[input.length - i] = input[i]
+function reverseWithHalfIteration(str){
+  let result = []
+  for (let i = 0; i < str.length / 2; i++) {
+    result[i] = str[(str.length - i)]
+    result[str.length - i] = str[i]
+  }
+  return result.join('')
 }
-console.log("result2",result2)
+
+
+console.log("result1", reverseWithFullIteration(input))
+
+console.log("result2", reverseWithHalfIteration(input))

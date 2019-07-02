@@ -7,6 +7,10 @@ https://itnext.io/the-absolute-easiest-way-to-debug-node-js-with-vscode-2e02ef5b
 
 node --inspect-brk <FILE NAME>
 
+https://www.w3schools.com/js/js_strings.asp
+
+strings are immutable!
+
 ### io Module
 
 **Set the prompt text:** 
