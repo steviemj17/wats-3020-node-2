@@ -4,15 +4,6 @@ Input:
 Output:
 Usage: 
 */
-/**
- * Rewrite fizzbuz to use a function that returns fizz or buzz or fizzbuzz
- * Users enters a number
- * User tests all numbers between 1 and the number
- * entered and log the number and
- * fizz if divisable for 3
- * buzz if divisable by 5
- * fizzbuzz if divisable by 15
- */
 const getargs = require("../modules/getargs")
 
 // get the value to be evaluated

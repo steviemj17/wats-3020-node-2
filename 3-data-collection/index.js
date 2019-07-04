@@ -1,20 +1,10 @@
-/**
- * Prompt user for data (name,favorite color, favorite number)
- * Put data into an Object (key value)
- * Report back using print 
- * 
- * Look at the io module that provides a "terminal" interface
- * by creating a "wrapper" around stdin and stdout.  Notice
- * that the "print" function implemented console.log which
- * is just writing a message with a "newline" character.
- * 
- * Prompting a user has three phases: 1)output a statements asking
- * for something  2)waiting for user to enter some data
- * 3) processing the data that the user enters as a string
- * We can tell the that phase 2 is complete by waiting for the 'line' event
- * We use a "callback" function that will receieve the user respons as a string
- * to process the data
- */
+/*
+Description:
+Input:
+Output:
+Usage: 
+*/
+
 const io = require("../modules/io")
 const questionKeys = [{
     "key": "name",

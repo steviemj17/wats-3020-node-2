@@ -39,9 +39,9 @@ io.terminal.on('line', function (response) {
       io.print(`Your ${getOrdinal(guessCount)} guess ${responseInt} is incorrect`)
     }
   }
-  // say something if number is too big
+  // (optional) say something if number guessed is too big
 
-  // say something if number is too small
+  // (optional) say something if number guessed is too small
 
   // if done guessing exit
   if (guessCount > 2) {
