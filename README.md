@@ -164,14 +164,17 @@ this project:
 * Indexing
 
 
-## Basic Requirements
+## Tutorials
+Fork this repository.
+In order to successfully complete this assignment, you must find and complete the **TODOs** in the code:
 
-In order to successfully complete this exercise, you must find and complete the **TODOs** in the code:
-
-1. 
-2. 
-3. 
-4. 
+1. **1-fizzbuzz (required)** 
+2. **1-fizzbuzz-fun (required)** 
+3. **2-reverse-string (required)**
+4. **2-reverse-string-iterate (required)**
+5. **3-data-collection (required)**
+6. **4-character-count (optional)**
+7. **5-guessing-game (optional)**
 
 
 **be sure to test all your apps**
@@ -186,5 +189,7 @@ Turn in 2 URL's on Canvas which should be of the format:
 
 ## Stretch Goals
 
-1.
+Complete the optional tutorials.
+
+
 
