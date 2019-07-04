@@ -1,3 +1,4 @@
+//TODO fill in comment template
 /*
 Description:
 Input:
@@ -8,11 +9,10 @@ const getargs = require("../modules/getargs")
 // test that input is a number and exit with error
 // get the value to be evaluated
 let input = getargs.getStringArg()
-//test that its an integer
-if (!input || input.length === 0) {
-  console.log("usage: node 2-reverse-string <string>")
-  process.exit(1)
-}
+//test that it is a string
+
+//TODO check for string argument and if no string is entered provide a usage statement and quit
+
 
 
 console.log(input.split('').reverse().join(''))

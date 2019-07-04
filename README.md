@@ -189,6 +189,7 @@ In order to successfully complete this assignment, you must find and complete th
   ```
   
 2. **1-fizzbuzz-fun (required)** 
+In this tutorial, we move our logic into a function.  Pulling logic into a function makes it easier to share and test.
   - TODO once you get fizzbuzz working above copy it to the 1-fizzubzz-fun directory
   - TODO replace the loop that was testing each value with a loop that calls a function 
   ```JavaScript
@@ -211,7 +212,46 @@ In order to successfully complete this assignment, you must find and complete th
   }
   ```
 3. **2-reverse-string (required)**
+ - TODO fill in the comment template.  This program will look for a string argument. If it doesn't find one it will display a message showing the format of the command.  The input is an an string.  The output is the input string reversed. The user can enter multiple words in a string argument by using quotes.
+  - TODO check for string argument and if no string is entered provide a usage statement and quit
+  ```JavaScript
+ if (!input || input.length === 0) {
+  console.log("usage: node 2-reverse-string <string>")
+  process.exit(1)
+}
+  ```
+  - TODO use array functions to reverse the string by splitting string into array elements, using the array reverse method, and then using the array join method to turn the array back into a string. Log the reversed string.
+  ```JavaScript
+  console.log(input.split('').reverse().join(''))
+  ```
 4. **2-reverse-string-iterate (required)**
+In this tutorial you look at optimizing an algorithm.  We write code in a function and try to minimize iteration.  It's faster if you only have to iterate through half a string than to iterate through the whole string.
+- TODO once you get the reverse string working above, copy the `index.js` file into the iterate directory.  You can remove the reverse string code but keep the input code.
+- TODO write a function that iterates through all of the characters in the string to create a string that is reversed and call the function using the input
+```JavaScript
+function reverseWithFullIteration(str) {
+  let result = ''
+  //work from the back forward to build a string
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i]
+  }
+  return result
+}
+console.log("result with full iteration", reverseWithFullIteration(input))
+```
+- TODO write a function that reverses the string but only iterates over half of the input string
+```JavaScript
+function reverseWithHalfIteration(str){
+  let result = []
+  //swap characters from back and front
+  for (let i = 0; i < str.length / 2; i++) {
+    result[i] = str[(str.length - i)]
+    result[str.length - i] = str[i]
+  }
+  return result.join('')
+}
+console.log("result with half iteration", reverseWithHalfIteration(input))
+```
 5. **3-data-collection (required)**
 6. **4-character-count (optional)**
 7. **5-guessing-game (optional)**
