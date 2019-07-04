@@ -169,7 +169,47 @@ Fork this repository.
 In order to successfully complete this assignment, you must find and complete the **TODOs** in the code:
 
 1. **1-fizzbuzz (required)** 
+  - TODO fill in the comment template.  This program will look for an integer argument. If it doesn't find one it will display a message showing the format of the command.  The input is an an integer.  The output is a list of all values from 1 to the value of the integer. If the number is divisible by 3 it is marked "fizz", if it's divisible by 5 it is marked "buzz" and if it is divisible for 15 (3 and 5) it is marked "buzz".
+  - TODO check for integer argument and if no integer entered provide a usage statement and quit
+  ```JavaScript
+  if (isNaN(input) || !Number.isInteger(input)) {
+    console.log("usage: node 1-fizzbuzz/index.js <integer>")
+    process.exit(1)
+  }
+  ```
+  - TODO provide info to for loop to iterate from 1 to value of input
+  ```JavaScript
+  let i = 1; i <= input; i++
+  ```
+  - TODO provide test for divisible for 3,5, and 15 to create desired output
+  ```JavaScript
+    i % 15 === 0 //divisible by 3 and 5
+    i % 5 === 0 //divisible by 5
+    i % 3 === 0 //divisible by 3
+  ```
+  
 2. **1-fizzbuzz-fun (required)** 
+  - TODO once you get fizzbuzz working above copy it to the 1-fizzubzz-fun directory
+  - TODO replace the loop that was testing each value with a loop that calls a function 
+  ```JavaScript
+  for (let i = 1; i <= input; i++) {
+    console.log(`${i}: ${fizzbuzz(i)}`)
+  }
+  ```
+  - TODO put the logic for determining fizzbuzz into a function named `fizzbuzz` that receives the value to be tested and returns fizz, buzz, fizzbuzz or an empty string
+  ```JavaScript
+  function fizzbuzz(n){
+    if (n % 15 === 0) {
+      return "fizzbuzz"
+    } else if (n % 3 === 0) {
+      return "fizz"
+    } else if (n % 5 === 0) {
+      return "buzz"
+    } else {
+      return ""
+    }
+  }
+  ```
 3. **2-reverse-string (required)**
 4. **2-reverse-string-iterate (required)**
 5. **3-data-collection (required)**
