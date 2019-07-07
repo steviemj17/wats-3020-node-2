@@ -345,9 +345,55 @@ for (let row of charArr){
 - TODO fill in comments template
 
 **5-guessing-game (optional)**
+In this tutorial we create a random number for the user to guess.  The same type function calls could be use to simulate the roll of a dice.  Then we prompt the user up to 3 times to guess the number.  In this code we just report that the user guesses correctly or not, but you could also, let them know if they guessed to high or too low.  If they don't guess correctly within 3 guesses that program terminates, telling them the correct guess.  
+
+- TODO create a variable 'n' that contains a random number between 1 and 10
+```JavaScript
+let n = Math.floor(Math.random() * 10) + 1 //get this randomly
+```
+- TODO initialize guessCount to 0 as we'll allow only 3 guesses
+```JavaScript
+let guessCount = 0
+```
+- TODO write a function 'getOrdinal' that takes an integer between 1 and 3 and returns "first","second","third" and return the input if not 1-3
+```JavaScript
+function getOrdinal(n){
+  if (n === 1){
+    return "first"
+  } else if (n===2){
+    return "second"
+  } else if (n===3) {
+    return "third"
+  }
+  else {
+    return n
+  }
+}
+```
+- TODO increment the counter
+```JavaScript
+  guessCount++;
+```
+- 
+```JavaScript
+ if (responseInt !== NaN) {
+    if (responseInt === n) {
+```
+- TODO write a logical expression to see if user has used up all guesses
+```JavaScript
+ if (guessCount > 2) {
+```
+- TODO detect the terminal is closing and do something
+```JavaScript
+io.terminal.on('close', function () {
+  console.log(`DONE`)
+  process.exit();
+});
+```
+- TODO fill in comments template
 
 
-**be sure to test all your apps**
+**NOTE: be sure to test all your apps**
 
 ## Turn in assignment
 Push your code to the forked repository in your account and [**create a pull request**](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork).  This will make it available for instructor code review.  
