@@ -253,6 +253,50 @@ function reverseWithHalfIteration(str){
 console.log("result with half iteration", reverseWithHalfIteration(input))
 ```
 5. **3-data-collection (required)**
+In this tutorial you'll use a local module to prompt the user to enter data.  Then you'll store the data in an object that you define.  You'll use a counter to access the questions from and array.  In the end you'll loop through the keys in an object and report the data you've collected.
+
+- TODO require the io module and name it `io`
+```JavaScript
+const io = require("../modules/io")
+```
+- TODO init a userData object
+```JavaScript
+let userData = {} //initialize an object to capture the data
+```
+- TODO init a counter to keep track of questions
+```JavaScript
+let counter = 0 //initial counter 
+```
+- TODO set the question prompt based on the counter and the questionKeys array
+```
+`${questionKeys[counter]["question"]}? `
+```
+- TODO load the answer using the question key in the userData Object
+```JavaScript
+ let currentQuestion = questionKeys[counter]
+    let key = currentQuestion.key
+    userData[key] = response
+```
+- TODO increment the counter
+```JavaScript
+counter++
+```
+- TODO logical expression to test if we are through with questions
+```JavaScript
+counter >= questionKeys.length
+```
+- TODO get the next question
+```JavaScript
+      let nextQuestion = questionKeys[counter]
+```
+- TODO loop through keys in object and using io.print to report
+```JavaScript
+for (let d in userData) {
+      io.print(`${d}: ${userData[d]}`)
+}
+```
+
+
 6. **4-character-count (optional)**
 7. **5-guessing-game (optional)**
 

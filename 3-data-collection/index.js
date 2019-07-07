@@ -1,11 +1,11 @@
 /*
 Description:
-Input:
+Input: prompted input based on question array
 Output:
 Usage: 
 */
+//TODO require the io module
 
-const io = require("../modules/io")
 const questionKeys = [{
     "key": "name",
     "question": "What is your name"
@@ -19,24 +19,34 @@ const questionKeys = [{
     "question": "What is is your favorite number"
   }
 ]
-let userData = {} //initialize an object to capture the data
+//TODO init a userData object
+
+//TODO init a counter to keep track of questions
 let counter = 0 //initial counter 
 
 // ask first question
-io.terminal.setPrompt(`${questionKeys[counter]["question"]}? `);
+
+//TODO set the question prompt based on the counter and the questionKeys array
+io.terminal.setPrompt();
+
+//show the prompt and wait for response
 io.terminal.prompt();
 
 //gather answers
+// get response when use click enter key 
 io.terminal.on('line', function (response) {
-    let currentQuestion = questionKeys[counter]
-    let key = currentQuestion.key
-    userData[key] = response
+    //get the current question and use the key to store the answer in the userData object
 
-    counter++
-    if (counter >= questionKeys.length) {
+    //TODO load the answer using the question key in the userData Object
+
+    //TODO increment the counter
+
+    //TODO logical expression to test if we are through with questions
+    if () {
       io.terminal.close()
     } else {
-      let nextQuestion = questionKeys[counter]
+      //TODO get the next question
+
       io.terminal.setPrompt(`${nextQuestion["question"]}? `);
       io.terminal.prompt();
     }
@@ -44,8 +54,6 @@ io.terminal.on('line', function (response) {
   })
   .on('close', function () {
     io.print("Questions complete")
-    //not iterable value in array
-    for (let d in userData) {
-      io.print(`${d}: ${userData[d]}`)
-    }
+    //TODO loop through keys in object and using io.print to report
+    
   });
