@@ -48,6 +48,7 @@ io.terminal.on('line', function (response) {
       //TODO get the next question
 
       io.terminal.setPrompt(`${nextQuestion["question"]}? `);
+      //call the prompt
       io.terminal.prompt();
     }
 
