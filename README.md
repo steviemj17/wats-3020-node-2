@@ -99,7 +99,20 @@ arr[1] = 1
 ```
 Unlike the Objects described above, and owning to the use of integer indexes, the data in Arrays can be ordered.  You can think of the index as a Key because, in fact they are.
 
-The Array object is defined with many methods (functions) that serve a variety of purposes.  Arrays unlike Objects described above are iterable which means we can loop over them and the order will be the same everytime.  In fact it will be the order of the indexes.
+The Array object is defined with many methods (functions) that serve a variety of purposes.  Arrays unlike Objects described above are iterable which means we can loop over them and the order will be the same every time.  In fact it will be the order of the indexes.
+
+We can add data to arrays in several ways.  If we want to add it to the end of the array, use the `push` function.
+```JavaScript
+let arr = []
+arr.push("a")
+console.log(arr) // displays "a"
+```
+We can also just assign a value by using an index.
+```JavaScript 
+let arr = []
+arr[0] = "a"
+console.log(arr) // displays "a"
+```
 
 Two, of many techniques for iterating over arrays are shown below.
 ```JavaScript
@@ -298,7 +311,7 @@ for (let d in userData) {
 - TODO fill in comments template
 
 
-**4-character-count (optional)**
+**4-character-count (required)**
 Counting words in a sentence and sentences in a document is a common problem.  In this exercise we count characters in an picked up in from a user prompt.  It's handy to use an object to count the characters, but then for reporting we often want the counts in order and an array is useful for that.  
 - TODO init charcount object to count characters
 ```JavaScript
@@ -344,7 +357,10 @@ for (let row of charArr){
 ```
 - TODO fill in comments template
 
-**5-guessing-game (optional)**
+**5-create-list (diy)**  
+Follow instructions in TODO's to code up a program that gathers data from user and puts it into an array using the array `push` function.  When user enters "quit", don't add that but stop collecting data and report back the completed list.
+
+**6-guessing-game (optional)**
 In this tutorial we create a random number for the user to guess.  The same type function calls could be use to simulate the roll of a dice.  Then we prompt the user up to 3 times to guess the number.  In this code we just report that the user guesses correctly or not, but you could also, let them know if they guessed to high or too low.  If they don't guess correctly within 3 guesses that program terminates, telling them the correct guess.  
 
 - TODO create a variable 'n' that contains a random number between 1 and 10
