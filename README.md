@@ -154,10 +154,23 @@ console.log(typeof arr) // prints object
 ``` 
 
 ## JavaScript Functions
-function(<params>) <function name>{}
-<function name>(<args>)
+Functions allow us to encapsulate code so that we can run it by calling from anyplace in our code.  This is especially helpful when we want to call some code over and over as in a loop and we don't want to clutter up the code with a lot of commands right inside the loop.    
+Using functions is part of **structure programming**.  This refers to taking a large problem and breaking it down into "functional" pieces.  You'll also see functions added to objects to provide the methods which define what the object can do.  Functions together with data are what make up an object.  
 
-(<params> =>{}
+We have two different syntaxes available for defining functions.  The arrow syntax is new (ES6) and it provides for a scoped `this` value.  In standard functions, `this` can refer to an object outside of the curly braces that make up the function, but with arrow functions, `this` is only relevant within the curly braces.  
+Example of syntax for standard functions:
+```JavaScript
+  function displayThis(){
+    console.log(this) //displays all data in global namespace
+  }
+```
+Example of syntax for arrow functions:
+```JavaScript
+  let displayThis = ()=>{
+    console.log(this) //displays undefined
+  }
+```
+You can test out the difference in running with these 2 ways by running `node functions` in this project,  and looking at the code in `.functions.js`
 
 ## Indexing, Looping and Algorithms
 
@@ -176,7 +189,7 @@ this project:
 * Looping
 * Indexing
 
-
+* * *
 ## Tutorials
 Fork this repository.
 In order to successfully complete this assignment, you must find and complete the **TODOs** in the code:
