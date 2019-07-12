@@ -179,15 +179,13 @@ You can test out the difference in running with these 2 ways by running `node fu
 It might be helpful to review some additional resources as you work through
 this project:
 
-* Object
-* Array
-* Array functions
-* Function
-* Events
-* Iteration
-* Algorithms
-* Looping
-* Indexing
+* [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+* [Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
+* [Array functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods)
+* [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+* [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+* [Looping and Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+* [Algorithms](https://developer.mozilla.org/en-US/docs/Glossary/Algorithm)
 
 * * *
 ## Tutorials
