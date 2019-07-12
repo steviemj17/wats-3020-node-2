@@ -7,30 +7,19 @@ Output: log the items in the list one row at a time
 Usage: 5-create-list
 */
 
-const io = require("../modules/io")
+//TODO declare an io module
 
-//define a list const
-const list = []
+//TODO define a list const
 
-//set up and run a prompt to enter "First item: "
-io.terminal.setPrompt(`First item: `)
-io.terminal.prompt()
+//TODO set up and run a prompt to enter "First item: "
+
 
 //gather answers
-io.terminal.on("line", function (response) {
+//TODO set up terminal on line handler to capture user responses
 
-    if (response.toLowerCase() === "quit") {
-      io.terminal.close()
-    } else {
-      list.push(response)
-      io.terminal.setPrompt(`Next item: `)
-      io.terminal.prompt();
-    }
+//TODO in the loop test for response equal to quit and close if
+//"quit" is entered, otherwise use the push command to add 
+//the response to the list array. Then prompt for next item using
+// "Next item: "
 
-  })
-  .on("close", function () {
-    io.print("List complete")
-    for (let item of list){
-      io.print(`${item}`)
-    }
-  })
+//TODO on close print "List Complete" and
