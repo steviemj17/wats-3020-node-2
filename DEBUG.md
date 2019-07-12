@@ -10,13 +10,13 @@ Find Debug > node > AUTO ATTACH  and choose on
 <img src="./images/vs-code-node-debug-auto-attach.png" width="320" height="auto">
 </div>
 
+## Add break points to code
+Go to code and use the toggle in left margin to turn on break points 
+
 ## Add "inspect break" option to command line when running program
 
 ```bash
 node --inspect-brk <name of program>
 ```
-## Add break points to code
-Go to code and use the toggle in left margin to turn on break points 
 
-## Run the code
 Read about [debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging)
