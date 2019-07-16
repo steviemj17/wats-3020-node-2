@@ -1,4 +1,9 @@
 # WATS 3020 Node 2
+
+### **Walkthrough Video**
+[Node-2](https://www.youtube.com/watch?v=aL21p8mtJgk)
+***
+
 * Objects
 * Arrays
 * Functions
