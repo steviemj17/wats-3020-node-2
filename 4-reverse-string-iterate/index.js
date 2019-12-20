@@ -14,13 +14,13 @@ function reverseWithFullIteration(str) {
     let result = '';
     // TODO loop from end of str (str.length-1) to beginning
     for ( ) {
-        result += str[i];
+        // TODO add the letter in the current position to the result string.
     }
     return result;
 }
 
 function reverseWithHalfIteration(str) {
-    // TODO write a function that reverses the string but only iterates over half of the input string.
+    // STRETCH TODO write a function that reverses the string but only iterates over half of the input string.
 }
 
 //test that it is a string
@@ -31,7 +31,8 @@ if ( ) {
 else {
     // use functions to reverse string
     console.log("result with full iteration", reverseWithFullIteration(input));
-    console.log("result with half iteration", reverseWithHalfIteration(input));
+
+    // STRETCH TODO output the result of your reverseWithHalfIteration function
 
 }
 

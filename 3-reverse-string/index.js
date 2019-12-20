@@ -18,7 +18,7 @@ if () {
 }
 else {
     // uses string methods to reverse the string
-    console.log(input.split('').reverse().join(''))
+    console.log(input.split('').reverse().join(''));
 }
 
 

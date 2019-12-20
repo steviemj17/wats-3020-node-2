@@ -21,13 +21,13 @@ else {
     
     //TODO provide for tests for divisible for 3,5, and 15 to create desired output
     if ( ) {
-      console.log(`${i} fizzbuzz`)
+      console.log(`${i} fizzbuzz`);
     } else if ( ) {
-      console.log(`${i} fizz`)
+      console.log(`${i} fizz`);
     } else if ( ) {
-      console.log(`${i} buzz`)
+      console.log(`${i} buzz`);
     } else {
-      console.log(`${i}`)
+      console.log(`${i}`);
     }
 
   }
