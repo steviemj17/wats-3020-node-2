@@ -5,10 +5,9 @@ This exerise has been developed to give you an opportunity to work with JavaScri
 * `2-fizzbuzz-fun`: an adaptation of the FizzBuzz algorithm but with a function.
 * `3-reverse-string`: a program that takes a string as input and reverses it using JavaScript string methods.
 * `4-reverse-string-iterate`: a program that takes a string as input and reverses it by iterating through the string, character by character.
-* `5-character-count`: .
-* `6-data-collection`: .
+* `5-character-count`: a program that takes a string as input and counts how many of each character are in that string.
 
-This assignment uses the local module **getargs** to pull a single argument out of the command line for input and `console.log(<string>)` for all output. The final exercise, `6-data-collection`, uses the local module **io** to prompt the user for input.
+This assignment uses the local module **getargs** to pull a single argument out of the command line for input and `console.log(<string>)` for all output.
 
 ## Topics covered by this Assignment:
 * [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
@@ -28,7 +27,7 @@ In order to complete this project successfully, you will need to fulfill these r
 * Complete all of the associated TODOs in `index.js` in the `5-character-count` folder in order to correctly recognize a string, count the characters in the string, and output the number of each character (sorted in order of frequency).
 
 ## Guide & Tutorial
-For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. IN the alternative, a video walkthrough of the assignment can be found here: **link**.
+For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. In the alternative, a video walkthrough of the assignment can be found here: **link**.
 
 ## Stretch Goals
 1. In the exercise `4-reverse-string-iterate`, complete the STRECH TODOs in order to reverse the string by only iterating through half of its length.
