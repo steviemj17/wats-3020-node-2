@@ -2,22 +2,19 @@
 
 This exerise has been developed to give you an opportunity to work with JavaScript Objects, Arrays, Functions, Loops, and Events. There are separate sections for the various parts of the assignment, broken up into separate folders:
 * `1-fizzbuzz`: a program that counts from 1 to a given integer, printing out _fizz_ if the number is divisble by 3, _buzz_ if it is divisible by 5, and _fizzbuzz_ if it is divisible by both 3 and 5.
-* `1-fizzbuzz-fun`: an adaptation of the FizzBuzz algorithm but with functions.
-* `2-reverse-string`: a program that takes a string as input and reverses it using JavaScript string methods.
-* `2-reverse-string-iterate`: a program that takes a string as input and reverses it by iterating through the string, character by character.
-* `3-data-collection`: .
-* `4-character-count`: .
-* `5-create-list`: .
-* `6-guessing-game`: .
+* `2-fizzbuzz-fun`: an adaptation of the FizzBuzz algorithm but with a function.
+* `3-reverse-string`: a program that takes a string as input and reverses it using JavaScript string methods.
+* `4-reverse-string-iterate`: a program that takes a string as input and reverses it by iterating through the string, character by character.
+* `5-character-count`: .
+* `6-data-collection`: .
 
-This assignment uses the local module **getargs** to pull a single argument out of the command line for input and `console.log(<string>)` for all output.
+This assignment uses the local module **getargs** to pull a single argument out of the command line for input and `console.log(<string>)` for all output. The final exercise, `6-data-collection`, uses the local module **io** to prompt the user for input.
 
 ## Topics covered by this Assignment:
 * [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 * [Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
 * [Array functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods)
 * [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
-* [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 * [Looping and Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
 Read more about these topics in the local file [reference.md](reference.md).
@@ -25,18 +22,14 @@ Read more about these topics in the local file [reference.md](reference.md).
 ## Basic Requirements
 In order to complete this project successfully, you will need to fulfill these requirements:
 * Complete the code for all of the associated TODOs in `index.js` in the `1-fizzbuzz` folder such that the program accepts numeric input and correctly outputs _fizz_, _buzz_, or _fizzbuzz_ for each number.
-* Complete the code for all of the associated TODOs in `index.js` in the `1-fizzbuzz-fun` folder such that the program works similarly to the `1-fizzbuzz` program.
-* Complete the code for the conditional logic in `index.js` in the `2-reverse-string` folder such that the program properly identifies that a string has been inputted and returns the reversed string as output.
-* Complete all of the associated TODOs in `index.js` in the `2-reverse-string-iterate` folder such that the program properly identifies that a string has been inputted and returns the reversed string twice: once by iterating through the full string and once by itereating through only half of the string.
+* Complete the code for all of the associated TODOs in `index.js` in the `2-fizzbuzz-fun` folder such that the program works similarly to the `1-fizzbuzz` program.
+* Complete the code for the conditional logic in `index.js` in the `3-reverse-string` folder such that the program properly identifies that a string has been inputted and returns the reversed string as output.
+* Complete all of the associated TODOs in `index.js` in the `4-reverse-string-iterate` folder such that the program properly identifies that a string has been inputted and returns the reversed string by iterating through the full length of the string.
+* Complete all of the associated TODOs in `index.js` in the `5-character-count` folder in order to correctly recognize a string, count the characters in the string, and output the number of each character (sorted in order of frequency).
 
-## I/O for this code  
-* Use the local module **getargs** to pull a single argument out of the command line for input. 
-* Use the local module **io** to prompt the user for input 
-* Use console.log(<string>) or io.print(<string>) for output.
+## Guide & Tutorial
+For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. IN the alternative, a video walkthrough of the assignment can be found here: **link**.
 
 ## Stretch Goals
-
-Complete the optional tutorials.
-
-
-
+1. In the exercise `4-reverse-string-iterate`, complete the STRECH TODOs in order to reverse the string by only iterating through half of its length.
+2. In the exercise `5-character-count`, also display the character counts in alphabetical order.
