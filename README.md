@@ -1,6 +1,6 @@
 # WATS 3020 Node 2
 
-This exerise has been developed to give you an opportunity to work with JavaScript Objects, Arrays, Functions, Loops, and Events. There are separate sections for the various parts of the assignment, broken up into separate folders:
+This exercise has been developed to give you an opportunity to work with JavaScript Objects, Arrays, Functions, Loops, and Events. There are separate sections for the various parts of the assignment, broken up into separate folders:
 * `1-fizzbuzz`: a program that counts from 1 to a given integer, printing out _fizz_ if the number is divisble by 3, _buzz_ if it is divisible by 5, and _fizzbuzz_ if it is divisible by both 3 and 5.
 * `2-fizzbuzz-fun`: an adaptation of the FizzBuzz algorithm but with a function.
 * `3-reverse-string`: a program that takes a string as input and reverses it using JavaScript string methods.
