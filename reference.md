@@ -1,41 +1,5 @@
 # Reference for WATS 3020 Node 2
 
-## Using the **io** module
-The local **io** module provides a "wrapper" around the node `readline` module.  Two functions are exported from the **io** module: `print` and `terminal`.  We often create functions wrappers around other functions when we want to supply specific options.  
-
-The `print` function behaves exactly the same way as the `console.log` function and was created just to show you could write your own `console.log` function.
-
-The `terminal` function allows us to use `readline` with our terminal output.  The `readline` function is asynchronous.  Asynchronous code **"listens"** for **"events"** to be fired and responds by executing code within a **"callback"** function.  JavaScript is an event driven, functional language.  
-
-Many times i/o (input/output) commands are implemented as events because the computer must wait for a user or device to tell it the the input or output is ready to be processed.  Rather than have the processing unit of the computer actually wait, in an async system, the next in the instruction set is processed.  Setting up a listener allows code dependent on input to be called only when the input is available without tying up processing.
-
-The **terminal** function listens for the `readline` events which include `line` and `close`.  The `line` event is fired when the user hits the enter key to produce a `newline` character.  The `close` function is fired when the `terminal.close()` function is executed or the code exits the process with `process.exit()`.
-
-The `terminal.setPrompt("{ask for data}")` command can be used to provide string output when asking the user for something.  Then when `terminal.prompt()` is called the string provided is shown to the user and the computer waits for a response.  When the user presses the enter key, the callback for the `line` event is executed. 
-
-The pattern you'll see in the code for exercises 3-4 is as follows:
-```JavaScript
-// ask first question
-io.terminal.setPrompt(`Ask a question? `);
-io.terminal.prompt();
-
-//gather answers
-io.terminal.on('line', function (response) {
-    //process the response
-
-    //if you need more info
-    io.terminal.setPrompt(`Ask another question? `);
-    io.terminal.prompt();
-
-    //else close the terminal
-    io.terminal.close()
-
-  })
-  .on('close', function () {
-    io.print("Summarize the data")
-  });
-
-```
 ## JavaScript Objects
 We've learned that variable reference "containers" that have types and contain data. For example in the statement`let s = "red"`, the variable `s` references a string variable with the data value "red".  
 JavaScript Objects contain data in the form of key/value pairs where the key is the reference and the value is the data.  Objects can also reference functions.  Below, you'll read about functions as "containers" for code.  
@@ -171,6 +135,5 @@ this project:
 * [Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
 * [Array functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods)
 * [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
-* [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 * [Looping and Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 * [Algorithms](https://developer.mozilla.org/en-US/docs/Glossary/Algorithm)
