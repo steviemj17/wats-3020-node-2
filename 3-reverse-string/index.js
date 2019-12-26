@@ -13,7 +13,7 @@ let input = getargs.getStringArg()
 
 //test that it is a string
 //TODO check for string argument and if no string is entered provide a usage statement and quit
-if (!input) {
+if ( ) {
     // TODO provide a usage statement
 }
 else {
