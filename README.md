@@ -33,4 +33,5 @@ For assistance on how to proceed with specific components of the assignment, con
 1. Write a variant of `1-fizzbuzz` or `2-fizzbuzz-fun` that uses two separate `if` statements and string addition instead of the four part `if-else` statement.
 2. In the exercise `4-reverse-string-iterate`, complete the STRECH TODOs in order to reverse the string by only iterating through half of its length.
 3. Write an alternative version of `4-reverse-string-iterate` that uses a `for of` loop. Learn more about the `for of` loop on the MDN JavaScript web docs [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
-4. In the exercise `5-character-count`, also display the character counts in alphabetical order.
+4. For `3-reverse-string` and `4-reverse-string-iterate`, use the console [`commands console.time(<label>)`](https://developer.mozilla.org/en-US/docs/Web/API/Console/time) and [`console.timeEnd(<label>)`](https://developer.mozilla.org/en-US/docs/Web/API/Console/timeEnd) to see how long each method takes.
+5. In the exercise `5-character-count`, also display the character counts in alphabetical order.
