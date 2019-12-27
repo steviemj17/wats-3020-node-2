@@ -27,7 +27,12 @@ In order to complete this project successfully, you will need to fulfill these r
 * Complete all of the associated TODOs in `index.js` in the `5-character-count` folder in order to correctly recognize a string, count the characters in the string, and output the number of each character (sorted in order of frequency).
 
 ## Guide & Tutorial
-For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. In the alternative, a video walkthrough of the assignment can be found here: **link**.
+For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. In the alternative, a video walkthrough of the assignment can be found [here](https://youtu.be/0scwXA47Eh8). Timestamps for specific parts of the assignment (with associated links) are as follows:
+* [2:32 - Part 1 of 5, 1-fizzbuzz](https://youtu.be/0scwXA47Eh8?t=152)
+* [10:44 - Part 2 of 5, 2-fizzbuzz-fun](https://youtu.be/0scwXA47Eh8?t=644)
+* [15:27 - Part 3 of 5, 3-reverse-string](https://youtu.be/0scwXA47Eh8?t=927)
+* [18:58 - Part 4 of 5, 4-reverse-string-iterate](https://youtu.be/0scwXA47Eh8?t=1138)
+* [27:01 - Part 5 of 5, 5-character-count](https://youtu.be/0scwXA47Eh8?t=1621)
 
 ## Stretch Goals
 1. Write a variant of `1-fizzbuzz` or `2-fizzbuzz-fun` that uses two separate `if` statements and string addition instead of the four part `if-else` statement.
