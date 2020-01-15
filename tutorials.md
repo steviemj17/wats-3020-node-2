@@ -11,6 +11,9 @@ FizzBuzz (as it's usually written in programming communities) is a popular quest
    * The input is an an integer. 
    * The output is a list of all values from 1 to the value of the integer. If the number is divisible by 3 it is marked "fizz", if it's divisible by 5 it is marked "buzz" and if it is divisible for 15 (3 and 5) it is marked "buzz".
    * This program requires node and is run using the command `node 1-fizzbuzz <integer>`.
+
+The next two steps are similar to what was done in the previous assignment, [wats-3020-node-1](github.com/suwebdev/wats-3020-node-1).
+
 2. TODO check if input is not an integer
     ```JavaScript
     if (isNaN(input) || !Number.isInteger(input))
@@ -19,10 +22,16 @@ FizzBuzz (as it's usually written in programming communities) is a popular quest
     ```JavaScript
     console.log("usage: node 1-fizzbuzz <integer>");
     ```
+
+For the main part of this program, we want to use a standard `for` loop in order to iterate from 1 to the provided number. The syntax for the `for` loop can be [found in the MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for).
+
 4. TODO provide info to for loop to iterate from 1 to value of input
     ```JavaScript
     for (let i = 1; i <= input; i++)
     ```
+
+Testing for divisibility requires a multi-part if ... else statement. The syntax for the `if ... else` statement can be [found in the MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else).
+
 5. TODO provide test for divisible for 3,5, and 15 to create desired output
     ```JavaScript
     if (i % 15 == 0) {
@@ -35,6 +44,7 @@ FizzBuzz (as it's usually written in programming communities) is a popular quest
         console.log(`${i}`)
     }
     ```
+It is important to realize that in the if..else statement, it stops processing if one of the conditions is met. That means that if `(i % 15 == 0)` is true, it does not check to see if any of the later conditionals are true.
 
 ## 2-fizzbuzz-fun
 
@@ -66,15 +76,19 @@ Reversing a string variable is another common interview question. For this first
     *  The input is an an string.
     *  The output is the input string reversed. The user can enter multiple words in a string argument by using quotes.
     *  This program requires node and is run using the command `node 3-reverse-string <string>`.
-2. TODO check for string argument and if no string is entered provide a usage statement and quit
+
+As with the parts 1 and 2, the next two steps are similar to what was done in the previous assignment, [wats-3020-node-1](github.com/suwebdev/wats-3020-node-1).
+
+1. TODO check for string argument and if no string is entered provide a usage statement and quit
     ```JavaScript
     if (!input || input.length === 0);
     ```
-3. TODO provide a usage statement
+2. TODO provide a usage statement
     ```JavaScript
     console.log("usage: node 3-reverse-string <string>");
     ```
-4. The actual code to reverse the string is already in the `index.js` file but is re-created here.
+
+The actual code to reverse the string is already in the `index.js` file but is re-created here. As described above, it uses array and string methods to accomplish the string reversal.
    ```JavaScript
    console.log(input.split('').reverse().join(''));
    ```
