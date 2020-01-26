@@ -2,7 +2,7 @@
 Description: an adaptation of the FizzBuzz algorithm but with a function
 Input:
 Output:
-Usage: 
+Usage: node 2-fizzbuzz-fun
 */
 
 const getargs = require("../modules/getargs")
