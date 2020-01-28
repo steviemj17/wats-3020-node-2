@@ -9,7 +9,7 @@ Usage: node 1-fizzbuzz <integer>
 const getargs = require("../modules/getargs")
 let input = getargs.getIntegerArg()
 
-if (isNaN(input) || Number.isInteger(input)) {
+if (isNaN(input) || !Number.isInteger(input)) {
   console.log("usage: node 1-fizzbuzz <integer>");
 }
 else {

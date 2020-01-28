@@ -17,11 +17,11 @@ function fizzbuzz(n) {
   } else if (n % 5 == 0) {
     return `buzz`;
   } else {
-    ``;
+    return ``;
   }
 }
 
-if (isNaN(input) || Number.isInteger(input)) {
+if (isNaN(input) || !Number.isInteger(input)) {
   console.log("usage: node 1-fizzbuzz <integer>");
 }
 else {
